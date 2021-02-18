@@ -70,9 +70,8 @@ Network_security_config.xml 안에 이 코드를 삽입한다.
 
 방법은 tomcat 라이브러리 폴더의 /webapps/ROOT/안에 넣으면 된다.
 
-[JSP파일 Link][JspFilelink]
-[JspFilelink] : https://github.com/aejung09/Android_Momamia/tree/main/JspFile
-Link: JSP파일 Link
+
+Link: [JSP파일 Link](https://github.com/aejung09/Android_Momamia/tree/main/JspFile)
 
 
 ---
