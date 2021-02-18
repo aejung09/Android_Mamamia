@@ -37,7 +37,7 @@
 
 
 ### 1.Manifest에 아래코드를 추가한다.
-
+``` java
         <uses-permission android:name="android.permission.INTERNET" />
         <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
         <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
@@ -48,14 +48,14 @@
 
         <uses-library android:name="org.apache.http.legacy"
             android:required="false"/>
-            
+  ```          
 ### 2.Tomcat 서버와 연동하기 위해 src폴더안에 /xml 폴더를 만든다.
 
 이후 xml 폴더안에 network_security_config.xml 이라는 XML Resource File 을 생성한다.
 
 Network_security_config.xml 안에 이 코드를 삽입한다.
 
-    
+    ``` java
     <?xml version="1.0" encoding="utf-8"?>
     <network-security-config>
     <base-config cleartextTrafficPermitted="true">
@@ -64,6 +64,8 @@ Network_security_config.xml 안에 이 코드를 삽입한다.
             </trust-anchors>
         </base-config>
     </network-security-config>
+    ```
+    ---
 ## 3.Tomcat에 연동할 jsp 파일을 폴더에 넣는다.
 
 방법은 tomcat 라이브러리 폴더의 /webapps/ROOT/안에 넣으면 된다.
@@ -71,13 +73,13 @@ Network_security_config.xml 안에 이 코드를 삽입한다.
 Link: JSP파일 Link
 
 
-
+---
 ## 4.Tomcat에 사진을 넣기 위해 pictures 폴더를 만든다.
 
 방법은 tomcat 라이브러리 폴더의 /webapps/ROOT/안에 pictures폴더를 생성하면 된다.
 
 
-
+----
 ## 5.MYSQL 라이브러리를 넣는다
 
 방법은 connector를 받아 tomcat 라이브러리 폴더의 /lib 에 넣어주면 된다.
@@ -86,11 +88,12 @@ Link: JSP파일 Link
 
 Link: MYSQL Connector
 
-
+---
 
 ## 6.test 폴더 안에 jsp MYSQL 데이터 베이스의 주소를 수정하도록한다.
 이를테면
-
+    
+  
     String stSearch =  request.getParameter("addrName");
 
     String url_mysql = "jdbc:mysql://이부분에 데이터베이스주소를 수정하세요/MYSQL스키마이름?serverTimezone=Asia/Seoul&characterEncoding=utf8&useSSL=false";
@@ -98,8 +101,9 @@ Link: MYSQL Connector
     String id_mysql = "아이디";
 
     String pw_mysql = "암호";
+
 한글로 적혀있는 부분은 각자 환경에 맞게 채우면 된다.
 
 
-
+----
 ## 7.SQL Table 형식은 다음과 같다.
