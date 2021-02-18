@@ -1,7 +1,7 @@
 # Android_Momamia
 
 
-##1.Build gradle에 추가를 한다.
+## 1.Build gradle에 추가를 한다.
 
 
     dependencies {........
@@ -27,8 +27,8 @@
         implementation 'com.squareup.picasso:picasso:2.71828'
         annotationProcessor 'com.github.bumptech.glide:compiler:4.11.0'
     }
-##2.Andorid에 권한을 추가한다.
-###1.Manifest에 아래코드를 추가한다.
+## 2.Andorid에 권한을 추가한다.
+### 1.Manifest에 아래코드를 추가한다.
 
         <uses-permission android:name="android.permission.INTERNET" />
         <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
@@ -40,7 +40,7 @@
 
         <uses-library android:name="org.apache.http.legacy"
             android:required="false"/>
-###2.Tomcat 서버와 연동하기 위해 src폴더안에 /xml 폴더를 만든다.
+### 2.Tomcat 서버와 연동하기 위해 src폴더안에 /xml 폴더를 만든다.
 
 이후 xml 폴더안에 network_security_config.xml 이라는 XML Resource File 을 생성한다.
 
@@ -55,22 +55,22 @@ Network_security_config.xml 안에 이 코드를 삽입한다.
             </trust-anchors>
         </base-config>
     </network-security-config>
-##3.Tomcat에 연동할 jsp 파일을 폴더에 넣는다.
+## 3.Tomcat에 연동할 jsp 파일을 폴더에 넣는다.
 방법은 tomcat 라이브러리 폴더의 /webapps/ROOT/안에 넣으면 된다.
 
 Link: JSP파일 Link
 
-##4.Tomcat에 사진을 넣기 위해 pictures 폴더를 만든다.
+## 4.Tomcat에 사진을 넣기 위해 pictures 폴더를 만든다.
 방법은 tomcat 라이브러리 폴더의 /webapps/ROOT/안에 pictures폴더를 생성하면 된다.
 
-##5.MYSQL 라이브러리를 넣는다
+## 5.MYSQL 라이브러리를 넣는다
 방법은 connector를 받아 tomcat 라이브러리 폴더의 /lib 에 넣어주면 된다.
 
 참고) windowOS는 /webapps/ROOT/WEB-INF에 cos.jar를 넣어주면 된다. MYSQL Connector는 이전과 동일하게 /lib에 넣어주면 된다.
 
 Link: MYSQL Connector
 
-##6.test 폴더 안에 jsp MYSQL 데이터 베이스의 주소를 수정하도록한다.
+## 6.test 폴더 안에 jsp MYSQL 데이터 베이스의 주소를 수정하도록한다.
 이를테면
 
     String stSearch =  request.getParameter("addrName");
@@ -82,4 +82,4 @@ Link: MYSQL Connector
     String pw_mysql = "암호";
 한글로 적혀있는 부분은 각자 환경에 맞게 채우면 된다.
 
-##7.SQL Table 형식은 다음과 같다.
+## 7.SQL Table 형식은 다음과 같다.
