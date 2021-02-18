@@ -55,7 +55,7 @@
 
 Network_security_config.xml 안에 이 코드를 삽입한다.
 
-    ``` xml
+``` xml
     <?xml version="1.0" encoding="utf-8"?>
     <network-security-config>
     <base-config cleartextTrafficPermitted="true">
@@ -64,8 +64,8 @@ Network_security_config.xml 안에 이 코드를 삽입한다.
             </trust-anchors>
         </base-config>
     </network-security-config>
-    ```
-    ---
+```
+-------
 ## 3.Tomcat에 연동할 jsp 파일을 폴더에 넣는다.
 
 방법은 tomcat 라이브러리 폴더의 /webapps/ROOT/안에 넣으면 된다.
