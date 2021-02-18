@@ -1,8 +1,9 @@
 # Android_Momamia
 
-1.Build gradle에 추가를 한다.
 
 1.Build gradle에 추가를 한다.
+
+
     dependencies {........
 
      //리사이클러뷰
