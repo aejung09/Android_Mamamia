@@ -3,7 +3,7 @@
 
 ## 1.Build gradle에 추가를 한다.
 
-
+``` java
     dependencies {........
 
      //리사이클러뷰
@@ -27,6 +27,7 @@
         implementation 'com.squareup.picasso:picasso:2.71828'
         annotationProcessor 'com.github.bumptech.glide:compiler:4.11.0'
     }
+    ```
 ## 2.Andorid에 권한을 추가한다.
 
 ### 1.Manifest에 아래코드를 추가한다.
