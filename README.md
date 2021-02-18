@@ -1,9 +1,10 @@
 # Android_Momamia
 
 
-## 1.Build gradle에 추가를 한다.
+## 1.Build gradle에 추가를 한다.  
 
 
+    
     dependencies {........
 
      //리사이클러뷰
@@ -28,6 +29,7 @@
         implementation 'com.squareup.picasso:picasso:2.71828'
         annotationProcessor 'com.github.bumptech.glide:compiler:4.11.0'
     }
+    
 ------------
 
 
