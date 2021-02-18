@@ -115,3 +115,4 @@ int(11),AI,PK|	varchar(45)	|varchar(45)	|varchar(150)|	varchar(45)	|varchar(45),
 ----
 ## 8.실행영상
 
+<a href = "https://www.youtube.com/watch?v=-QOxN_vmg-4"<img width="487" alt="스크린샷 2021-02-18 오후 5 26 48" src="https://user-images.githubusercontent.com/70096347/108327287-93389680-720e-11eb-8a76-3ae374c8cba1.png"></a>
