@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/itemTel"
+        android:title="전화">
+    </item>
+    <item
+        android:id="@+id/itemDelete"
+        android:title="삭제">
+    </item>
+    <item
+        android:id="@+id/itemUpdate"
+        android:title="수정">
+    </item>
+
+</menu>
