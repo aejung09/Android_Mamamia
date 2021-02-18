@@ -108,3 +108,6 @@ Link: [MYSQL Connector](https://github.com/aejung09/Android_Momamia/tree/main/My
 
 ----
 ## 7.SQL Table 형식은 다음과 같다.
+addrNo|addrName |	addrTel	|addrAddr|	addrDetail|	addrLike	|addrTag	|addrImagePath|
+---|---|---|---|---|---|---|---|
+int(11),AI,PK|	varchar(45)	|varchar(45)	|varchar(150)|	varchar(45)	|varchar(45),Default'0'|	varchar(45)|	varchar(100)
