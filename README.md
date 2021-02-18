@@ -37,7 +37,7 @@
 
 
 ### 1.Manifest에 아래코드를 추가한다.
-``` java
+``` xml
         <uses-permission android:name="android.permission.INTERNET" />
         <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
         <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
@@ -55,7 +55,7 @@
 
 Network_security_config.xml 안에 이 코드를 삽입한다.
 
-    ``` java
+    ``` xml
     <?xml version="1.0" encoding="utf-8"?>
     <network-security-config>
     <base-config cleartextTrafficPermitted="true">
@@ -93,7 +93,7 @@ Link: MYSQL Connector
 ## 6.test 폴더 안에 jsp MYSQL 데이터 베이스의 주소를 수정하도록한다.
 이를테면
     
-  
+ ``` java
     String stSearch =  request.getParameter("addrName");
 
     String url_mysql = "jdbc:mysql://이부분에 데이터베이스주소를 수정하세요/MYSQL스키마이름?serverTimezone=Asia/Seoul&characterEncoding=utf8&useSSL=false";
@@ -101,7 +101,7 @@ Link: MYSQL Connector
     String id_mysql = "아이디";
 
     String pw_mysql = "암호";
-
+```
 한글로 적혀있는 부분은 각자 환경에 맞게 채우면 된다.
 
 
