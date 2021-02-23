@@ -87,7 +87,7 @@ Link: [JSP파일 Link](https://github.com/aejung09/Android_Momamia/tree/main/Jsp
 
 참고) windowOS는 /webapps/ROOT/WEB-INF에 cos.jar를 넣어주면 된다. MYSQL Connector는 이전과 동일하게 /lib에 넣어주면 된다.
 
-Link: MYSQL Connector
+Link: [MYSQL Connector](https://github.com/aejung09/Android_Momamia/tree/main/MySQL%20Connector)
 
 ---
 
@@ -108,3 +108,13 @@ Link: MYSQL Connector
 
 ----
 ## 7.SQL Table 형식은 다음과 같다.
+addrNo|addrName |	addrTel	|addrAddr|	addrDetail|	addrLike	|addrTag	|addrImagePath|
+---|---|---|---|---|---|---|---|
+int(11),AI,PK|	varchar(45)	|varchar(45)	|varchar(150)|	varchar(45)	|varchar(45),Default'0'|	varchar(45)|	varchar(100)
+
+----
+## 8.실행영상
+
+[<img width="230" alt="스크린샷 2021-02-18 오후 5 26 48" src="https://user-images.githubusercontent.com/70096347/108327287-93389680-720e-11eb-8a76-3ae374c8cba1.png">](https://www.youtube.com/watch?v=-QOxN_vmg-4)
+
+이미지 클릭시 영상띄워짐.
